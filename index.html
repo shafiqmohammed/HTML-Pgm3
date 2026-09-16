@@ -1,19 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Basic CSS Selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Practice</title>
 
     <style>
-        /* Write your CSS here */
+
+        /* Universal Selector */
+        * {
+            font-family: Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Element Selector */
+        h1 {
+            color: purple;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ID Selector */
+        #main-title {
+            background-color: #f3e8ff;
+            border-radius: 10px;
+        }
+
+        /* Class Selector */
+        .description {
+            color: #2563eb;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Grouping Selector */
+        h2, p {
+            margin: 15px;
+        }
+
+        /* Extra styling */
+        body {
+            background-color: #f5f5f5;
+            padding: 30px;
+        }
+
+        .box {
+            width: 600px;
+            max-width: 100%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid purple;
+            border-radius: 15px;
+        }
 
     </style>
-
 </head>
 
 <body>
 
-     /* Write your html code to structure your web page here */
+    <div class="box">
+
+        <h1 id="main-title">CSS Selectors</h1>
+
+        <h2>Understanding Selectors</h2>
+
+        <p class="description">
+            This paragraph demonstrates the
+            <strong>class selector</strong>.
+        </p>
+
+        <p>
+            This paragraph demonstrates the
+            <strong>grouping selector</strong>.
+        </p>
+
+    </div>
 
 </body>
 </html>
