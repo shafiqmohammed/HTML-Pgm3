@@ -1,19 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Basic CSS Selectors</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIV and SPAN Example</title>
 
-    <style>
-        /* Write your CSS here */
+<style>
+* {
+    box-sizing: border-box;
+}
 
-    </style>
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f3ff;
+    color: #333;
+}
+
+.container {
+    width: 700px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #7c3aed;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+    margin-top: 0;
+    color: #6d28d9;
+    border-bottom: 2px solid #ddd6fe;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.highlight {
+    color: #db2777;
+    font-weight: bold;
+    background-color: #fce7f3;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+strong {
+    color: #2563eb;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+</style>
 
 </head>
 
 <body>
 
-     /* Write your html code to structure your web page here */
+<div class="container">
+
+    <h2>DIV Element Example</h2>
+
+    <p>
+        The <strong>DIV</strong> element is a block-level container
+        used to group HTML elements.
+    </p>
+
+    <p>
+        This sentence contains a
+        <span class="highlight">SPAN element</span>
+        that highlights only a part of the text.
+    </p>
+
+</div>
+
+<div class="container">
+
+    <h2>Another DIV Section</h2>
+
+    <p>
+        The <span class="highlight">SPAN</span> element is an
+        inline container used to style specific words or phrases.
+    </p>
+
+</div>
 
 </body>
-</html>
+</html>vvvvvvv
